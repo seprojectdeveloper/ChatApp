@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/verifytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/black"
+        android:text="Enter Your Phone Number"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/verifytext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        style="@android:style/TextAppearance.Material.Body1"
+        android:text="Please confirm your country code and enter your phone number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verifytext" />
+
+    <EditText
+        android:id="@+id/verifytext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:text="+92"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verifytext2" />
+
+    <EditText
+        android:id="@+id/verifytext4"
+        style="@android:style/TextAppearance.Material.Body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:hint="Phone Number"
+        app:layout_constraintStart_toEndOf="@id/verifytext3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verifytext2"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verifytext4"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Continue"
+        android:textSize="20sp"
+        android:backgroundTint="@color/lightblue500"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

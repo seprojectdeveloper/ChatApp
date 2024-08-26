@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Chat App</string>
+    <string name="lasttname" />
+    <string name="firstname" />
+    <string name="verifyt">We have sent you an SMS with the code to %s</string>
+    <string name="user_photo" />
+</resources>
